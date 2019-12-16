@@ -1,9 +1,9 @@
 import { Field, ObjectType } from "type-graphql";
-// import { URLResolver } from "graphql-scalars";
+import { URLResolver } from "graphql-scalars";
 
 @ObjectType()
 export class HelloURL {
-  @Field(() => String, { nullable: true })
+  @Field(() => URLResolver, { nullable: true })
   url: string | undefined;
 
   @Field(() => String)
