@@ -20,7 +20,7 @@ export async function startServer(): Promise<Server> {
 
   apolloServer.applyMiddleware({ app, path: "/graphql" });
 
-  // const a = new URL("https:www.google.com");
+  const a = new URL("https:www.google.com");
 
   return app.listen({ port: 4000 }, () => {
     console.log("Server ready at http://localhost:4000/graphql");
